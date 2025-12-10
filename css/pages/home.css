@@ -606,17 +606,15 @@
 }
 
 /* -------------------------main-------------------- */
-.main {
-    margin-bottom: 50px;
+.main{
+     background: #FBFBFB;
 }
-
 .main__container {
     justify-content: space-between;
 }
 
 .main__list {
     display: flex;
-    background: #FBFBFB;
 }
 
 .main__box {
@@ -781,4 +779,91 @@
     line-height: 22px;
     letter-spacing: 0%;
     color: #3D3D3D;
+}
+/* -------------------------footer------------------ */
+.footer{
+    background: #FBFBFB;
+    margin-top: -19px;
+}
+.footer__list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__item{
+    flex-direction: column;
+    display: flex;
+}
+.footer__span{
+    display: block;
+    font-family: "Montserrat";
+font-weight: 700;
+font-size: 18px;
+line-height: 16px;
+letter-spacing: 0%;
+color: #3D3D3D;
+margin-bottom: 15px;
+}
+.footer__link{
+    display: inline-block;
+    font-family: "Montserrat";
+font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+letter-spacing: 0%;
+color: #3D3D3D;
+margin-bottom: 15px;
+position: relative;
+display: inline-block;
+overflow: hidden;
+}
+.footer__link:hover{
+    color: #46A358;
+}
+.footer__link::before,
+.footer__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    height: 2px;
+    width: 0;
+    background: #46A358; 
+    transition: 0.3s ease;
+}
+.footer__link::before {
+    left: 40%;
+}
+.footer__link::after {
+    right: 50%;
+}
+.footer__link:hover::before,
+.footer__link:hover::after {
+    width: 50%;
+}
+.fa-brands{
+     margin-left: 20px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    color: #46A35899;
+    border: 1px solid #46A358;
+    border-radius: 6px;
+    padding: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(70, 163, 88, 0.4); 
+    color: #46A358;
+    border-color: #46A358; 
+}
+
+.footer__text{
+    font-family: "Montserrat";
+font-weight: 700;
+font-size: 18px;
+line-height: 16px;
+letter-spacing: 0%;
+color: #3D3D3D;
+margin-bottom: 20px;
 }
